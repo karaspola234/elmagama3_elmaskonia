@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجامع المسكونية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <style>
+  /* اعدادات عامة */
+ body {
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ffefc5;
+    color: #333;
+    }   
+
+    .a{
+    text-decoration: none;
+     color: black;
+    }
+    .logo{
+    height: 200px;  
+    display: flex; 
+    background-position: center center;
+    text-align: center;
+    }
+    a:hover{
+    color: #574307;
+    transition: 450ms;
+     }
+
+
+    /*الشريط العلوي */
+    .navbar{
+       background-color:rgb(10, 10, 23) ;
+       color: white;
+       padding: 15px 20px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       position: relative;
+       }
+
+
+
+
+
+   .navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 10px;
+    border: 3px solid;
+    background-color: #181824;
+    border-radius: 3px;
+    transition: color 0.3s;
+    transition: transform 0.5s;
+   }
+
+
+ .navbar a:hover {
+    color: #ff0000;
+    transition: 2ms;
+
+
+
+ }
+
+ .hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+ } 
+
+ .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+
+ .hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blure(30px);
+    background: rgb(0 , 0 , 0 , 0.6);
+    z-index: 1;
+  }
+ .hero-text{
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+ }
+
+ .hero-text h1{
+     font-size: 2.5em;
+     font-family: 'Courier New', Courier, monospace;
+     margin-bottom: 10px;
+     color: rgb(248, 7, 7);
+     text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 20px rgb(255, 255, 255),
+           0 0 30px rgb(255, 255, 255),
+           0 0 40px rgb(255, 255, 255);
+    }
+
+ .hero-text p{
+   font-size: 1.2em;
+   text-shadow: 0 0 5px #fff,
+           0 0 10px #fff,
+           0 0 20px #fff,
+           0 0 40px #fff,
+ }
+
+
+
+  /* الفوتر */
+ footer{
+   background-color: #181824;
+   text-align: center;
+   height: 180px;
+   color: #ffefc5;
+   align-items: center;
+   margin-top: 0px;
+   padding: 30px 0 0 0;
+   
+ }
+
+ </style>
+<body>
+ <!-- Navbar -->
+  <div class="navbar"></div> 
+  <div dir="rtl" style="font-size: 40px; color: red; text-align: center; background-position: center center; font-size: 50px; text-decoration: underline;">مدونة تاريخ المجامع المسكونية<br>اثْبُتْ عَلَى مَا تَعَلَّمْتَ (2 تي 14:3)</div>
+     <div class="logo">
+      <img src="600x600bf-60.jpg" alt="logo"></div>
+    <div class="navbar">
+      <a href="#">
+         <button>الرئيسية</button>
+      </a>
+        <a href="page2.html">
+         <button>الأحداث</button>
+      </a>
+        <a href="page3.html">
+         <button>عني</button>
+      </a>
+        <a href="page4.html">
+         <button>تواصل</button>
+      </a>
+
+    </div>
+    </a>
+  </div>   
+
+  <section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="مجمع نيقية الأول عام 325 م_ توحيد الكنيسة الأولى.mp4" type="video/mp4">
+    متصفحك لا يدعم تشغيل الفيديو
+  </video>
+  <div class="hero-text">
+   <h1>مرحبا بكم في مدونة المجامع المسكونية</h1>
+   <p>تعرف علي مواضع فاصلة في تاريخ كنيستنا</p>
+  </div>
+  </section>
+
+ 
+
+ 
+
+     <!--Footer-->
+     <footer style="font-size: 25px; color: red; text-align: center; font-size: 50px;">
+     &copy;تاريخ المجامع المسكونية | كنيسة جورجيوس ابو طاقية | كاراس بولا مجدي | 2025 
+     </footer>
+</body>
+</html>
